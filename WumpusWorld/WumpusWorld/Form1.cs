@@ -187,6 +187,7 @@ namespace WumpusWorld
             definirMovimiento();
         }
 
+        //Funcion para matar al wumpus
         private void IntentarMatar(object sender, EventArgs e)
         {
             if(flecha_cargada)
@@ -368,18 +369,21 @@ namespace WumpusWorld
             {
                 cueva[PosX_Actual_Jugador, PosY_Actual_Jugador].BackgroundImage = WumpusWorld.ImagenesRes.wumpus;
                 MessageBox.Show("Fuite comido por el wumpus.... Perdiste");
+                FinalizarJuego();
             }
 
             if (posHoyos[PosX_Actual_Jugador, PosY_Actual_Jugador])
             {
                 cueva[PosX_Actual_Jugador, PosY_Actual_Jugador].BackgroundImage = WumpusWorld.ImagenesRes.hoyo;
                 MessageBox.Show("Caiste en un hoyo.... Perdiste");
+                FinalizarJuego();
             }
 
             if (posSalida[PosX_Actual_Jugador, PosY_Actual_Jugador])
             {
                 cueva[PosX_Actual_Jugador, PosY_Actual_Jugador].BackgroundImage = WumpusWorld.ImagenesRes.puerta;
                 MessageBox.Show("Encontraste la salida.... Ganaste");
+                FinalizarJuego();
             }
 
             if (posOro[PosX_Actual_Jugador, PosY_Actual_Jugador])
@@ -449,6 +453,14 @@ namespace WumpusWorld
             redefinirCueva();
             definirMovimiento();
             ActivarSensores();
+        }
+
+        private void FinalizarJuego()
+        {
+            btnIzquierda.Visible = false;
+            btnDerecha.Visible = false;
+            btnArriba.Visible = false;
+            btnAbajo.Visible = false;
         }
 
 
