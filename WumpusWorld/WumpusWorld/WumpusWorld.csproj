@@ -52,10 +52,20 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImagenesRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImagenesRes.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagenesRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImagenesRes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +88,123 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_Brillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_Brisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_Hedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_Brillo_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_Brisa_Brillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_Brisa_Hedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_Brisa_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_Hedor_Brillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_Hedor_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_J_Brillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_J_Brisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_J_Hedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_J_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_Brisa_Brillo_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_Brisa_Hedor_Brillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_Brisa_Hedor_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_Hedor_Brillo_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_J_Brillo_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_J_Brisa_Brillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_J_Brisa_Hedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_J_Brisa_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_J_Hedor_Brillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_J_Hedor_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_J_Brisa_Brillo_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_J_Brisa_Hedor_Brillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_J_Brisa_Hedor_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_J_Hedor_Brillo_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_J_Brisa_Hedor_Brillo_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brisa_Hedor_Brillo_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoyo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jugador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puerta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wumpus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_Brisa_Hedor_Brillo_Luz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
